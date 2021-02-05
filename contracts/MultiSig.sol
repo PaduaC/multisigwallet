@@ -11,7 +11,7 @@ contract MultiSig {
         bool sent;
     }
 
-    mapping(uint256 => Transfer) transfers;
+    mapping(uint256 => Transfer) public transfers;
     // Next id for Transfer
     uint256 nextId;
     // Keep track of which approvers have already approved transfer
